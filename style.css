@@ -7,7 +7,7 @@
 }
  body {
     background-color: rgb#000;
-    background-image: url("assets/back.jpg");
+    background-image: url("assets/pexels-jplenio-1103970.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,10 +20,10 @@ h1 {
 }
 
 img{
-    max-width: 100% ;
+    max-width: 40% ;
     display: block;
     height: auto;
-    margin: 0 ;
+    margin: 0 auto;
 
 }
 p{ text-align: justify;
@@ -32,5 +32,13 @@ p{ text-align: justify;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
+}
 
+button{
+    display: block;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
 }
