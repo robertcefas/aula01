@@ -1,0 +1,36 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: rgb#000;
+    background-image: url("assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+h1 {
+    text-align: center;
+    color: rgb(155, 43, 43);
+}
+
+img{
+    max-width: 100% ;
+    display: block;
+    height: auto;
+    margin: 0 ;
+
+}
+p{ text-align: justify;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+
+}

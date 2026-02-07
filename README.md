@@ -5,7 +5,7 @@
 
 TRAZENDO POSSIVEI MUDANÇAS DO GITHUB
 ```
-git push
+git pull
 ```
 ADICIONA ARQUIVOS PARA COMMIT
 ```
