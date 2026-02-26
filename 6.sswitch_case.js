@@ -11,10 +11,9 @@ switch (opcao) {
         break;
     case 3:
         console.log("Opção 3 ") //alt shift e seta para baixo para copiar a linha
-        break;
-        console.log("Opção inválida") //control de pra selecionar a opção
+        break; 
     case 4:
-        console.log("Opção 4 ")
+        console.log("Opção 4 ") //control de pra selecionar a opção
         break;
     case 5:
         console.log("Opção 5 ")
