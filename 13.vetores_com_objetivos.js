@@ -25,11 +25,11 @@ maioresDe18.forEach( usuario =>
     console.log(`${usuario.nome} tem ${usuario.idade}`)
 )
 
-console.log("\nMostrando apenas nomes:")
-const listaDeNomes = listaUsuarios.map(u => u.nome)
-listaDeNomes.forEach( nome => console.log (`${nome}`))
+// console.log("\nMostrando apenas nomes:")
+// const listaDeNomes = listaUsuarios.map(u => u.nome)
+// listaDeNomes.forEach( nome => console.log (`${nome}`))
 
-console.log("\nEncontrar um usuário: ")
-const usuarioEncontrado = listaUsuarios.find(u => u.nome ==="Carla")
-console.log(usuarioEncontrado)
-console.log(`Nome: ${usuarioEncontrado.nome} \nIdade: ${usuarioEncontrado.idade}`)
+// console.log("\nEncontrar um usuário: ")
+// const usuarioEncontrado = listaUsuarios.find(u => u.nome ==="Carla")
+// console.log(usuarioEncontrado)
+// console.log(`Nome: ${usuarioEncontrado.nome} \nIdade: ${usuarioEncontrado.idade}`)
