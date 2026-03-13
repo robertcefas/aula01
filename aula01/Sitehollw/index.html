@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight & Silksong Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-animado"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo-protagonistas">
+                <img src="holloe.jpg" alt="The Knight" class="avatar knight">
+                <div class="divisor"></div>
+                <img src="honet2.jpg" alt="Hornet" class="avatar hornet">
+            </div>
+            <h1>Essência dos Reinos</h1>
+        </header>
+
+        <main class="card-hud">
+            <div class="input-box">
+                <label>Geo / Almas (N1):</label>
+                <input type="number" id="num1" placeholder="Digite um valor...">
+            </div>
+
+            <div class="input-box">
+                <label>Rosários / Seda (N2):</label>
+                <input type="number" id="num2" placeholder="Digite um valor...">
+            </div>
+
+            <button onclick="calcular()">Sincronizar Poder</button>
+
+            <div id="resultado">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
