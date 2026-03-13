@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter - Insert Coin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="arcade-container">
+        <div class="header-led">
+            <h1 class="title">STREET CALCULER APPLE</h1>
+        </div>
+
+        <div class="screen">
+            <div class="crt-lines"></div>
+            
+            <div class="content">
+                <h2 class="flicker">PLAYER 1</h2>
+                <p class="instruction">HOW MANY FIGHTS?</p>
+
+                <div class="input-area">
+                    <input type="number" id="quantidade" placeholder="0">
+                    <button onclick="calcularFichas()" class="fight-button">FIGHT!</button>
+                </div>
+
+                <div class="score-board">
+                    <span class="label">TOTAL COST:</span>
+                    <span id="resultado" class="value">R$ 0,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>12+ TOKENS: R$1,00 | < 12 TOKENS: R$1,30</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
