@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Vote Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="h">H</span>unter <span class="x">X</span> Vote
+            </div>
+        </header>
+
+        <main class="card">
+            <h2>Verificador de Licença Eleitoral</h2>
+            <p>Insira sua idade para descobrir seu status:</p>
+            
+            <input type="number" id="idadeInput" placeholder="Ex: 17" min="0">
+            <button onclick="verificarVoto()">Verificar</button>
+
+            <div id="resultado" class="resultado"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

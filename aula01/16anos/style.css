@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logotipo Estilo Hunter */
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.logo .h { color: #4CAF50; } /* Verde Gon */
+.logo .x { color: #FFD700; text-shadow: 2px 2px #FF4500; } /* X icônico */
+
+/* Card de Interface */
+.card {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 10px;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+h2 { font-family: 'Bebas Neue'; color: #FFD700; margin-top: 0; }
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FFD700;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.resultado {
+    margin-top: 25px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+/* Classes para o JS */
+.obrigatorio { border: 2px solid #FF4500; color: #FF4500; }
+.opcional { border: 2px solid #FFD700; color: #FFD700; }
+.proibido { border: 2px solid #888; color: #bbb; }

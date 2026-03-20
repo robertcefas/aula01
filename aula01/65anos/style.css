@@ -1,0 +1,176 @@
+/* Configurações Globais - Estilo Cartoon e Bob Esponja */
+body {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 700; /* Todas as letras em negrito */
+    text-transform: uppercase; /* Tudo em maiúsculas */
+    background-color: #0077b6; /* Azul do fundo do mar */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Adicionando bolhas e textura ao fundo */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle, #0096c7 10%, transparent 11%),
+        radial-gradient(circle, #0096c7 10%, transparent 11%);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Contêiner Principal - Mistura de Amarelo (Bob) e Marrom (Calça) */
+.kk-container {
+    background-color: #ffe066; /* Amarelo Vibrante (Bob Esponja) */
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 8px solid #000; /* Bordas grossas e pretas estilo cartoon */
+    box-shadow: 0 10px 0 #bf9a00; /* Sombra sólida amarela escura */
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Contêiner para o Logotipo */
+.kk-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.siri-logo {
+    max-width: 180px;
+    filter: drop-shadow(0 4px 0 #000); /* Sombra preta no logo */
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #b01c1c; /* Vermelho Sirigueijo */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 3px 0 #000; /* Sombra preta no texto */
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #4b2c2c; /* Marrom escuro */
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 4px solid #000; /* Bordas grossas */
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: inherit;
+    background-color: #fff;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Efeito ao clicar no input */
+input:focus {
+    outline: none;
+    border-color: #0056b3; /* Azul quando focado */
+    background-color: #e6f7ff;
+}
+
+/* Botão Estilo Hambúrguer de Siri (Vermelho e Marrom) */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #8B4513; /* Marrom Calça Quadrada */
+    color: white;
+    border: 6px solid #000; /* Borda grossa preta */
+    border-radius: 50px; /* Bordas arredondadas estilo bolha */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 8px 0 #000; /* Sombra sólida preta */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Adicionando "bolhas" ao botão ao passar o mouse */
+button:hover {
+    background-color: #a0522d;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 4px 0 #000;
+}
+
+/* Linha divisória estilo cartoon */
+.siri-hr {
+    border: 3px solid #000;
+    margin: 25px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    margin-top: 25px;
+    line-height: 1.8;
+    color: #4b2c2c; /* Marrom calça quadrada para o texto */
+}
+
+/* Badge de Status - Estilo "Placa de Ruas da Fenda do Biquíni" */
+.badge {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 12px;
+    border: 6px solid #000;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+/* Verde: Aprovado (Requerer Aposentadoria) */
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    box-shadow: 0 6px 0 #c3e6cb;
+}
+
+/* Vermelho: Negado (Não Requerer) */
+.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    box-shadow: 0 6px 0 #f5c6cb;
+}
+
+/* Efeito de bolha nas bordas do contêiner principal */
+.hidden { display: none; }

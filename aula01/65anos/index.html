@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH do Sirigueijo - Verificação de Aposentadoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div> <div class="kk-container">
+        <div class="kk-logo">
+            <img src="https://i.ibb.co/L5k6jR1/krusty-krab-logo.png" alt="Siri Cascudo Logo" class="siri-logo">
+        </div>
+
+        <h1>Quem está pronto?</h1>
+        <p class="subtitle">Análise de Aposentadoria para os Funcionários do Mês</p>
+        
+        <form id="retirementForm">
+            <div class="input-group">
+                <label for="codigo">ID do Funcionário:</label>
+                <input type="number" id="codigo" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="nascimento">Ano de Nascimento:</label>
+                <input type="number" id="nascimento" min="1900" max="2026" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="tempoTrabalho">Anos de Serviço no Siri Cascudo:</label>
+                <input type="number" id="tempoTrabalho" min="0" required>
+            </div>
+
+            <button type="submit">Calcular!</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <hr class="siri-hr">
+            <h3>Relatório de RH:</h3>
+            <p><strong>ID do Funcionário:</strong> <span id="resCodigo"></span></p>
+            <p><strong>Idade na Superfície:</strong> <span id="resIdade"></span> anos</p>
+            <p><strong>Tempo Dedicado ao Siri:</strong> <span id="resTempo"></span> anos</p>
+            <div id="statusBadge" class="badge"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
