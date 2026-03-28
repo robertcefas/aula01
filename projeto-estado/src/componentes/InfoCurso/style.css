@@ -1,0 +1,38 @@
+/* style.css */
+
+.info-curso {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: 6px solid #4ae296; /* Um detalhe de cor na lateral */
+    transition: transform 0.2s ease;
+}
+
+.info-curso:hover {
+    transform: translateY(-5px); /* Efeito suave ao passar o mouse */
+}
+
+.info-curso h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info-curso p {
+    color: #555;
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Deixando os rótulos em negrito */
+.info-curso p strong {
+    color: #222;
+}
