@@ -4,15 +4,15 @@ import './style.css'
 function AdicionarAluno() {
     const [nome, setNome] = useState("")
     const [email, setEmail] = useState("")
-    const [aluno, setAlunos] = useState([])
+    const [alunos, setAlunos] = useState([])
     
-    //Função para adicionar um aluino na lista
+    //Função para adicionar um aluno na lista
     const handleAdicionarAluno = (event) => {
         event.preventDefault() //Impede que a página seja recarregada.
 
         // Se os campos estiverem oreenchidos...
         if (nome && email) {
-            setAlunos([...setAlunos, {nome,email}]) //Adiciona na lista
+            setAlunos([...alunos, {nome,email}]) //Adiciona na lista
             setNome ("") // Apaga o nome informado deixando o campo vazio
             setEmail ("") // Apaga o e-mail informado deixando o campo vazio
         }
@@ -40,7 +40,7 @@ function AdicionarAluno() {
             <hr />
             <h2>Alunos Adicionado</h2>
             <ul>
-                {setAlunos.map((aluno, index) => (
+                {alunos.map((aluno, index) => (
                     <li key={index}>
                         {aluno.nome} - {aluno.email}
                     </li>
